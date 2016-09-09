@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
-{% set version = "0.7" %}
-{% set sha256 = "d4a5335d9f3a5c8df753cb31c6152dbb3d7ded01266a1188804289e0236df2c5" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "f28b7d524dd52a485e1e0597ab1ad5bab9f38705dd23253a292858202eb770ba" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - numpy >=1.9
     - pytables
     - future
-    
+
 test:
   imports:
     - phconvert
