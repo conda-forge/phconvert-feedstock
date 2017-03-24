@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
 {% set version = "0.7.3" %}
-{% set sha256 = "01e5e593359ffa386cd4a967532512565388c1e53082c9965a608819a65a22bd" %}
+{% set sha256 = "6243591c6acba686f1c64b8f90758ebe5d5510bfc7e25bbde58329756c67c5ce" %}
 
 package:
   name: {{ name|lower }}
