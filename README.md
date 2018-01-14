@@ -12,7 +12,7 @@ Summary: Convert and write Photon-HDF5 files.
 *phconvert* is a python 2 & 3 library that helps writing valid
 Photon-HDF5 <http://photon-hdf5.org/>
 files, a file format for time stamp-based single-molecule spectroscopy.
-Additionally, phconvert can convert a few common binary formats
+Additionally, phconvert can convert all the common binary formats
 used in in single-molecule spectroscopy (e.g. PicoQuant .HT3,
 Becker & Hickl .SPC/.SET) to Photon-HDF5.
 
