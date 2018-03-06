@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "c042e68c7bf56e2ec1f7dd04bf75e6a22db9cff179f482b254e88843c6e9e463" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "dbd4a55f49921df6844cf9390641496731d056d3e7d3604a02b6ea0cb5176a0a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
