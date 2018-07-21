@@ -20,14 +20,15 @@ Becker & Hickl .SPC/.SET) to Photon-HDF5.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/phconvert-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/phconvert-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/phconvert-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/phconvert-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/phconvert-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/phconvert-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/phconvert-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/phconvert-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/phconvert/badges/version.svg)](https://anaconda.org/conda-forge/phconvert)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/phconvert/badges/downloads.svg)](https://anaconda.org/conda-forge/phconvert)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-phconvert-green.svg)](https://anaconda.org/conda-forge/phconvert) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/phconvert.svg)](https://anaconda.org/conda-forge/phconvert) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/phconvert.svg)](https://anaconda.org/conda-forge/phconvert) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/phconvert.svg)](https://anaconda.org/conda-forge/phconvert) |
 
 Installing phconvert
 ====================
