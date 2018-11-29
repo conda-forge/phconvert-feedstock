@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "dbd4a55f49921df6844cf9390641496731d056d3e7d3604a02b6ea0cb5176a0a" %}
+{% set version = "0.9" %}
+{% set sha256 = "fe67a8dee4cee943d50ec09adfe5d6bb11318075426236c553ec053f105d1b35" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -27,7 +27,6 @@ requirements:
     - setuptools
     - numpy >=1.9
     - pytables
-    - future
 
 test:
   imports:
