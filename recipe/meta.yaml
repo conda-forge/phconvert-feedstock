@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
-{% set version = "0.9" %}
-{% set sha256 = "7049ec6b57e7571988eabf7f1a3025b129c9000e873374fbb85c2d837d8a8d17" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "ec2be3a9cad9674decae1749c9ab1441794bbff289a2ce4213856b04786853ea" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: python -m pip install -vv --no-deps --ignore-installed .
 
 requirements:
