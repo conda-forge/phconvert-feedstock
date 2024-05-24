@@ -14,7 +14,7 @@ build:
   noarch: python
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} 
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    - {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-build-isolation
   number: 0
 
 requirements:
