@@ -7,6 +7,7 @@ package:
   version: {{ version }}
 
 source:
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/Photon-HDF5/phconvert/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
