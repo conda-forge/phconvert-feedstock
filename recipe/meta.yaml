@@ -1,36 +1,38 @@
 {% set name = "phconvert" %}
-{% set version = "0.9" %}
-{% set sha256 = "7049ec6b57e7571988eabf7f1a3025b129c9000e873374fbb85c2d837d8a8d17" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/Photon-HDF5/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/Photon-HDF5/phconvert/archive/{{ version }}.tar.gz
+  sha256: ec2be3a9cad9674decae1749c9ab1441794bbff289a2ce4213856b04786853ea
 
 build:
-  noarch: python
-  number: 2
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
+    - python >=3.6
+    - setuptools >=64
+    - setuptools-scm
     - pip
-    - python
-    - setuptools
-
   run:
-    - python >=3.5
-    - setuptools
-    - numpy >=1.9
+    - python >=3.6
+    - numpy >=1.19
     - pytables
+    - importlib_resources  # [py<=310]
 
 test:
   imports:
     - phconvert
+  commands:
+    - pip check
+  requires:
+    - pip
+
 
 about:
   home: http://photon-hdf5.github.io/phconvert
