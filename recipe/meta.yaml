@@ -1,5 +1,6 @@
 {% set name = "phconvert" %}
 {% set version = "0.9.1" %}
+{% set sha256 = "ec2be3a9cad9674decae1749c9ab1441794bbff289a2ce4213856b04786853ea" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +8,19 @@ package:
 
 source:
   url: https://github.com/Photon-HDF5/phconvert/archive/{{ version }}.tar.gz
-  sha256: ec2be3a9cad9674decae1749c9ab1441794bbff289a2ce4213856b04786853ea
+  sha256: {{ sha256 }}
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script:
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} 
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.6
     - setuptools >=64
-    - setuptools-scm
+    - setuptools-scm >=6.0
     - pip
   run:
     - python >=3.6
@@ -40,7 +43,7 @@ about:
   license_file: LICENSE.txt
   summary: 'Convert and write Photon-HDF5 files.'
   description: |
-    *phconvert* is a python 2 & 3 library that helps writing valid
+    *phconvert* is a python 3 library that helps writing valid
     Photon-HDF5 <http://photon-hdf5.org/>
     files, a file format for time stamp-based single-molecule spectroscopy.
     Additionally, phconvert can convert all the common binary formats
