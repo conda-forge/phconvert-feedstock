@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} 
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
@@ -19,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - setuptools >=64
     - setuptools-scm >=6.0
     - pip
