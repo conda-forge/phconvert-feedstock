@@ -28,7 +28,7 @@ requirements:
     - python >=3.6
     - numpy >=1.19
     - pytables
-    - importlib_resources  # [py<=310]
+    - importlib_resources
 
 test:
   imports:
