@@ -13,7 +13,7 @@ Development: https://github.com/Photon-HDF5/phconvert
 
 Documentation: http://phconvert.readthedocs.io/
 
-*phconvert* is a python 2 & 3 library that helps writing valid
+*phconvert* is a python 3 library that helps writing valid
 Photon-HDF5 <http://photon-hdf5.org/>
 files, a file format for time stamp-based single-molecule spectroscopy.
 Additionally, phconvert can convert all the common binary formats
