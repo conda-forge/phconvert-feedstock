@@ -1,6 +1,6 @@
 {% set name = "phconvert" %}
-{% set version = "0.9.1" %}
-{% set sha256 = "ec2be3a9cad9674decae1749c9ab1441794bbff289a2ce4213856b04786853ea" %}
+{% set version = "0.9.2" %}
+{% set sha256 = "28f63ea6b3b415116290b1f6ec0d8186616d38ac789567dd793892dc8d179a68" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script:
-    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} 
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   number: 0
 
