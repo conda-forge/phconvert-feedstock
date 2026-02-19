@@ -1,6 +1,7 @@
 {% set name = "phconvert" %}
 {% set version = "0.10.1" %}
 {% set sha256 = "5df1236bf9657c14bdf511c4ea73c7d82ff2c5eb76437497ea114258492ab2e2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -20,17 +21,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >={python_min}
     - setuptools >=64
     - setuptools-scm >=6.0
     - pip
   run:
-    - python >=3.6
+    - python >={python_min}
     - numpy >=1.19
     - pytables
     - importlib_resources
 
 test:
+  requires:
+    - python {python_min}
   imports:
     - phconvert
   commands:
