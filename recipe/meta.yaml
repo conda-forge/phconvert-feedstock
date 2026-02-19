@@ -21,7 +21,7 @@ build:
 
 requirements:
   host:
-    - python >={{python_min}}
+    - python {{python_min}}
     - setuptools >=64
     - setuptools-scm >=6.0
     - pip
@@ -32,13 +32,12 @@ requirements:
     - importlib_resources
 
 test:
-  requires:
-    - python {{python_min}}
   imports:
     - phconvert
   commands:
     - pip check
   requires:
+    - python {{python_min}}
     - pip
 
 
